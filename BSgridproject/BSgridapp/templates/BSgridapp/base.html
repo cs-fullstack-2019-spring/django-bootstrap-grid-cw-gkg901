@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'BSgridapp/css/base.css' %}">
+    <link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Bevan" rel="stylesheet">
+
+</head>
+<body>
+{% block style %}
+{% endblock style %}
+
+
+<div class="container">
+    <left>
+        {% block left %}
+        {% endblock left %}
+    </left>
+
+    <right>
+        {% block right %}
+        {% endblock right %}
+    </right>
+    <buttons>
+        {% block buttons %}
+        {% endblock buttons %}
+    </buttons>
+</div>
+
+
+</body>
+</html>
